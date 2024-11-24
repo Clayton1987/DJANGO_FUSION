@@ -21,9 +21,9 @@ class IndexView(FormView):
         return context
     
     def form_valid(self, form, *args, **kwards):
-        form.send_email()
+        form.send_mail()
         messages.success(self.request, 'E-mail enviado com sucesso!')
-        return super(IndexView, self).form_valid(form, *args, **kwargs)
+        return super(IndexView, self).form_valid(form, *args, **kwards)
     
     def form_invalid(self, form, *args, **kwards) -> HttpResponse:
         messages.error(self.request, 'Erro ao enviar email')

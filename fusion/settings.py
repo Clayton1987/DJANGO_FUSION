@@ -134,6 +134,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+#email teste console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# EMAIL PRODUÇÃO
+
+# EMAIL_HOST = 'localhost'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'no-replay-contato@loja.com'
+# EMAIL_HOST_PASSWORD = 'senha'
+# DEFAULT_FROM_EMAIL = 'contato@loja.com'
 
 # Usuário (leave blank to use 'cdos'): cdos
 # Endereço de email: cdos@gmail.com
